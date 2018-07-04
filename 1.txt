@@ -1,0 +1,43 @@
+*devSecops
+*Teraform
+
+Linux commands
+
+Filter- advanced search use the command "grep". grep searchname destnation. 
+Also grep searchname * -R for entire files in pwd. 
+To ignore the search name use option -v. grep -v searchname destination.
+Use command "less" to show less. display like vi editor with same options.
+head and tail for to display start and end part of file.
+
+sed- To replace content in file. sed 's/searchfor/replacewith/g' filename.
+
+To create a link for file use "ln -s destination linkname"
+To redirect the output use ">". cat file1 > file2 will create file2 with the file1-content.
+To combine two commands use "|". cat file1 | head
+To find a file use "find". find destination -type name. 
+type may be name, inum, type, user, group
+
+"passwd" file has inf abt users. /etc/passwd
+"shadow" file has inf abt passwords.
+
+"useradd" in centos.  "adduser" in ubuntu
+switch user using "su - username"
+to change editor in ubuntu use "export EDITOR=vi"
+
+software mgmt
+yum for centos. apt-get for ubuntu.
+ex: yum install httpd, apt-get install apache2
+
+service
+yum service servicename status(or restart, reload)
+apt-get service servicename status(or reload, restart)
+
+"chkconfig --list" for the service confg list
+chkconfig for changing the confg of s/w or service
+update-rc.d servicename enable
+
+zipping:   tar -czvf filename.tar.gz filename
+unzipping: tar -xzvf filename
+(OR)
+zipping:     zip filename.zip filename
+unzipping: unzip filename

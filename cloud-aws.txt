@@ -1,0 +1,43 @@
+'cloudping.info'- for checking the latency from various available regions
+iaas- infrastructure as a service: manage os,middleware,runtime,data,apps.vendor mangs n/w,storage,servers,virtualization
+paas- platform as a service: manage data,apps.
+saas- software as a service: evrthng mngd by 
+
+'netstat -antp'- command to check to check service runng on ports
+
+'iptables'- firewall name till centos6
+'firewalld'-centos7 firewall name
+'ufw'- ubuntu firewall name
+
+chkconfig httpd on- to turn on service httpd as soon as o/s boots up
+chkconfig iptables off- to turn off
+
+'fdisk -l'- to check the harddisk inf with partitions
+'df -h'- to check the mounted points
+ 
+Create volumes:
+volumetypes- gen prps, prvisioned iops-high speed used fr db,magnetic-slowest chepst for backups long term strg,
+cold hdd- rotatble for large vol lk bg data wth mdrt spd, throughput hdd- for speed and lrg vol
+
+//tempory method
+'fdisk volumename' - to strt utlty to create parttns
+'n'- to create new parttn
+give prttn no.
+give parttn size
+'w'- to save the changes
+
+format the vol:
+'mkfs.ext4 volname'- to format using ext4 type format
+
+mount the vol to a folder:
+'mount volname folderpath'
+
+//permanent method
+'vi /etc/fstab/'
+enter the volname  foldpath  filetype  defaults  0 0
+save and quit
+'mount -a' to read /etc/fstab/ and mount
+
+Snapshot benefits:
+backup and restor, change vol type, increase vol size, change availability zone
+after creating the snapshot build a vol from it then 'umount' the old vol and then mount the new vol created from snapshot

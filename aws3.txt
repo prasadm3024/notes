@@ -1,0 +1,10 @@
+ELASTIC LOAD BALANCER:
+it distrbts the appl trafic to multiple instance at mltpl avlblty zns.watches the health of the instances and routes traffc to healthy instances only.
+2 types: Applctn load balncr and Classc load blncr
+
+RDS:
+to login into the db instance form you need the client in your os
+use command mysql -h ipadd -u username -p
+
+S3:
+benefits:1.file storage 2. host static websites 3.shared storage

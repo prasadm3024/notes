@@ -1,0 +1,6 @@
+Settings are saved in file "~./gitconfig"
+
+to see recent commits-"git show"
+to check the diff b/w two commits-"git diff commitid2..commitid1"
+to delete an untracked file-"git clean -f"
+to change status to staging after recent commit-"git reset --soft HEAD~1"

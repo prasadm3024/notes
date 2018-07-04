@@ -1,0 +1,3 @@
+scaling:
+vertical scaling: increase the memory of the web or app servers. limited
+horizontal scaling: increase the no. of web or app servers. no-limit
